@@ -6,7 +6,6 @@ void setup() {
   Serial.println("LABEL,Time,x,sin(x),pippo");  //LABEL serve ad indicare che trattasi di intestazione, mentre gli altri valori costituiranno l'intestazione del foglio di stile.
 }
 
-
 void loop() {
   Serial.print("DATA,TIME,"); Serial.print(x); Serial.print(","); Serial.print(sin(x*PI/180)); Serial.print(","); Serial.println("pippo");  //Determina il contenuto di una riga del file excel. 
                                                                                                                                             //In pratica la virgola serve per separare i vari campi e, per terminarla occorre andare a capo (println).
